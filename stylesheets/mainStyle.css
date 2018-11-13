@@ -1,0 +1,1048 @@
+/* imports */
+/* font-faces */
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("../fonts/Raleway-Bold.ttf");
+}
+/* Styles */
+/* line 31, ../sass/mainStyle.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* bg-animate */
+@-webkit-keyframes bg-slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -380px -380px;
+  }
+}
+/* Intro section */
+/* line 48, ../sass/mainStyle.scss */
+#intro-section {
+  position: relative;
+  box-shadow: 0px 2px 2px #CACBC9;
+  height: 100vh;
+}
+/* line 52, ../sass/mainStyle.scss */
+#intro-section #intro-section-image {
+  background: url("../img/triangles.jpg") repeat 0 0;
+  animation: bg-slide 20s linear infinite;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 62, ../sass/mainStyle.scss */
+#intro-section #section-a {
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 65, ../sass/mainStyle.scss */
+#intro-section #section-a #logo {
+  float: left;
+  display: block;
+  margin: 48px 0px;
+  position: relative;
+  z-index: 1000;
+}
+/* line 72, ../sass/mainStyle.scss */
+#intro-section #section-a #menu {
+  list-style: none;
+  float: right;
+  line-height: 160px;
+  margin-right: 5em;
+  position: relative;
+  z-index: 1000;
+}
+/* line 79, ../sass/mainStyle.scss */
+#intro-section #section-a #menu li {
+  display: inline-block;
+  margin: 0px 16px;
+}
+/* line 83, ../sass/mainStyle.scss */
+#intro-section #section-a #menu li:last-child span {
+  color: #32C296;
+  transition: all 250ms;
+}
+/* line 86, ../sass/mainStyle.scss */
+#intro-section #section-a #menu li:last-child span:hover {
+  color: #474B4F;
+}
+/* line 91, ../sass/mainStyle.scss */
+#intro-section #section-a #menu li a {
+  text-decoration: none;
+  font-family: Raleway-Bold;
+  font-size: 1.5em;
+  color: #474B4F;
+  transition: all 250ms;
+}
+/* line 97, ../sass/mainStyle.scss */
+#intro-section #section-a #menu li a:hover {
+  color: #32C296;
+}
+/* line 103, ../sass/mainStyle.scss */
+#intro-section #section-a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 109, ../sass/mainStyle.scss */
+#intro-section #section-b {
+  position: relative;
+  top: -20px;
+}
+/* line 112, ../sass/mainStyle.scss */
+#intro-section #section-b img#logoSign {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+}
+/* line 119, ../sass/mainStyle.scss */
+#intro-section #section-b #textContainer div {
+  text-align: center;
+}
+/* line 121, ../sass/mainStyle.scss */
+#intro-section #section-b #textContainer div:first-child {
+  font-size: 1.5em;
+  font-family: Raleway-Bold;
+  color: #222629;
+}
+/* line 125, ../sass/mainStyle.scss */
+#intro-section #section-b #textContainer div:first-child h1 {
+  margin: 20px;
+}
+/* line 129, ../sass/mainStyle.scss */
+#intro-section #section-b #textContainer div:nth-child(2) {
+  font-size: 1.875em;
+  font-family: Roboto;
+  color: #222629;
+}
+/* line 133, ../sass/mainStyle.scss */
+#intro-section #section-b #textContainer div:nth-child(2) span {
+  color: #32C296;
+}
+/* line 137, ../sass/mainStyle.scss */
+#intro-section #section-b #textContainer div:last-child {
+  margin-top: 20px;
+  font-size: 1.0625em;
+  font-family: Roboto;
+  color: #222629;
+  margin-bottom: 30px;
+}
+/* line 143, ../sass/mainStyle.scss */
+#intro-section #section-b #textContainer div:last-child span {
+  color: #32C296;
+}
+/* line 150, ../sass/mainStyle.scss */
+#intro-section #section-b img#arrowDown {
+  display: block;
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+/* line 158, ../sass/mainStyle.scss */
+#intro-section #sideScroll {
+  width: 80px;
+  height: 100px;
+  position: fixed;
+  right: 25px;
+  top: 80%;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  display: none;
+}
+/* line 167, ../sass/mainStyle.scss */
+#intro-section #sideScroll img {
+  width: 100%;
+  height: 100%;
+}
+/* line 171, ../sass/mainStyle.scss */
+#intro-section #sideScroll img:last-child {
+  position: fixed;
+  top: -5%;
+  left: 5%;
+}
+
+/*  skills-section */
+/* line 182, ../sass/mainStyle.scss */
+#skills-section, #projects-section, #clients-section, #team-section, #pricing-section, #contact-section, #footer-section {
+  box-shadow: 0px 2px 2px #CACBC9;
+  width: 100%;
+  height: auto;
+  background-color: #32C296;
+  padding-bottom: 100px;
+}
+/* line 188, ../sass/mainStyle.scss */
+#skills-section #headerContainer, #projects-section #headerContainer, #clients-section #headerContainer, #team-section #headerContainer, #pricing-section #headerContainer, #contact-section #headerContainer, #footer-section #headerContainer, #projects-section #headerContainerP, #clients-section #headerContainerC, #team-section #headerContainerT, #pricing-section #headerContainerPr, #contact-section #headerContainerCnct {
+  padding: 50px 0px;
+  text-align: center;
+  font-family: Roboto-Bold;
+  font-size: 0.9em;
+}
+/* line 194, ../sass/mainStyle.scss */
+#skills-section #wrapper, #projects-section #wrapper, #clients-section #wrapper, #team-section #wrapper, #pricing-section #wrapper, #contact-section #wrapper, #footer-section #wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-column-gap: 40px;
+  grid-row-gap: 80px;
+}
+/* line 202, ../sass/mainStyle.scss */
+#skills-section #wrapper .cube, #projects-section #wrapper .cube, #clients-section #wrapper .cube, #team-section #wrapper .cube, #pricing-section #wrapper .cube, #contact-section #wrapper .cube, #footer-section #wrapper .cube {
+  border: 8px solid #222629;
+  font-family: Roboto-Bold;
+  font-size: 1.6em;
+  background-color: #95989A;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* line 211, ../sass/mainStyle.scss */
+#skills-section #wrapper .cube:hover div:last-child, #projects-section #wrapper .cube:hover div:last-child, #clients-section #wrapper .cube:hover div:last-child, #team-section #wrapper .cube:hover div:last-child, #pricing-section #wrapper .cube:hover div:last-child, #contact-section #wrapper .cube:hover div:last-child, #footer-section #wrapper .cube:hover div:last-child {
+  height: 100%;
+  top: 0;
+}
+/* line 215, ../sass/mainStyle.scss */
+#skills-section #wrapper .cube > div:first-child, #projects-section #wrapper .cube > div:first-child, #clients-section #wrapper .cube > div:first-child, #team-section #wrapper .cube > div:first-child, #pricing-section #wrapper .cube > div:first-child, #contact-section #wrapper .cube > div:first-child, #footer-section #wrapper .cube > div:first-child {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #E0E0D1;
+  margin: 20px auto;
+}
+/* line 219, ../sass/mainStyle.scss */
+#skills-section #wrapper .cube > div:first-child img, #projects-section #wrapper .cube > div:first-child img, #clients-section #wrapper .cube > div:first-child img, #team-section #wrapper .cube > div:first-child img, #pricing-section #wrapper .cube > div:first-child img, #contact-section #wrapper .cube > div:first-child img, #footer-section #wrapper .cube > div:first-child img {
+  margin-top: 15px;
+  width: 80%;
+  height: 80%;
+}
+/* line 225, ../sass/mainStyle.scss */
+#skills-section #wrapper .cube div:last-child, #projects-section #wrapper .cube div:last-child, #clients-section #wrapper .cube div:last-child, #team-section #wrapper .cube div:last-child, #pricing-section #wrapper .cube div:last-child, #contact-section #wrapper .cube div:last-child, #footer-section #wrapper .cube div:last-child {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  background-color: #474B4F;
+  color: white;
+  height: 0%;
+  width: 100%;
+  transition: all 300ms;
+  padding: 80px 20px;
+  font-size: 0.8em;
+}
+
+/* projects section */
+/* line 243, ../sass/mainStyle.scss */
+#projects-section {
+  height: auto;
+  background-color: #E7EBE7;
+}
+/* line 250, ../sass/mainStyle.scss */
+#projects-section .wrapperP {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(300px, auto);
+  grid-column-gap: 80px;
+  grid-row-gap: 100px;
+}
+/* line 258, ../sass/mainStyle.scss */
+#projects-section .wrapperP #projectList {
+  grid-column: 1 / 4;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  font-family: Raleway-Bold;
+  text-align: center;
+}
+/* line 267, ../sass/mainStyle.scss */
+#projects-section .wrapperP #projectList > div {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  background-color: #E0E0D1;
+  font-family: Roboto-Bold;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: all 300ms;
+}
+/* line 275, ../sass/mainStyle.scss */
+#projects-section .wrapperP #projectList > div:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+/* line 280, ../sass/mainStyle.scss */
+#projects-section .wrapperP #projectList img {
+  width: 160px;
+  height: 180px;
+}
+
+/* clients */
+/* line 291, ../sass/mainStyle.scss */
+#clients-section {
+  height: auto;
+}
+/* line 297, ../sass/mainStyle.scss */
+#clients-section .wrapperC {
+  width: 40%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #222629;
+  background-color: #81E3C6;
+}
+/* line 305, ../sass/mainStyle.scss */
+#clients-section .wrapperC .arrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 310, ../sass/mainStyle.scss */
+#clients-section .wrapperC .arrow img {
+  width: 100%;
+  height: 100%;
+}
+/* line 315, ../sass/mainStyle.scss */
+#clients-section .wrapperC #left {
+  top: 45%;
+  left: -15%;
+}
+/* line 319, ../sass/mainStyle.scss */
+#clients-section .wrapperC #right {
+  top: 45%;
+  right: -15%;
+  transform: rotate(180deg);
+}
+/* line 324, ../sass/mainStyle.scss */
+#clients-section .wrapperC #headerSection {
+  height: 220px;
+  border-bottom: 5px solid #222629;
+}
+/* line 327, ../sass/mainStyle.scss */
+#clients-section .wrapperC #headerSection div {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 25px;
+}
+/* line 334, ../sass/mainStyle.scss */
+#clients-section .wrapperC #headerSection div img {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+/* line 341, ../sass/mainStyle.scss */
+#clients-section .wrapperC #contentSection {
+  height: auto;
+  font-family: Roboto;
+  font-size: 1.1em;
+}
+/* line 345, ../sass/mainStyle.scss */
+#clients-section .wrapperC #contentSection .txtCont {
+  margin: 0px 30px;
+}
+/* line 347, ../sass/mainStyle.scss */
+#clients-section .wrapperC #contentSection .txtCont a {
+  color: #222629;
+}
+/* line 350, ../sass/mainStyle.scss */
+#clients-section .wrapperC #contentSection .txtCont span {
+  font-size: 1.3em;
+}
+/* line 354, ../sass/mainStyle.scss */
+#clients-section .wrapperC #contentSection #starContainer {
+  text-align: center;
+  font-size: 1.3em;
+}
+/* line 357, ../sass/mainStyle.scss */
+#clients-section .wrapperC #contentSection #starContainer img {
+  width: 60px;
+  height: 60px;
+}
+
+/* team section*/
+/* line 368, ../sass/mainStyle.scss */
+#team-section {
+  background-color: #E7EBE7;
+  height: auto;
+  padding-bottom: 50px;
+}
+/* line 376, ../sass/mainStyle.scss */
+#team-section .wrapperT {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  grid-column-gap: 40px;
+}
+/* line 383, ../sass/mainStyle.scss */
+#team-section .wrapperT .cube {
+  border: 8px solid #222629;
+  font-family: Roboto-Bold;
+  font-size: 1.6em;
+  background-color: #95989A;
+  text-align: center;
+}
+/* line 389, ../sass/mainStyle.scss */
+#team-section .wrapperT .cube > div:first-child {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #E0E0D1;
+  margin: 20px auto;
+}
+/* line 393, ../sass/mainStyle.scss */
+#team-section .wrapperT .cube > div:first-child img {
+  margin-top: 15px;
+  width: 80%;
+  height: 80%;
+}
+/* line 399, ../sass/mainStyle.scss */
+#team-section .wrapperT .cube:last-child {
+  grid-column: 1 / 3;
+  justify-self: center;
+  padding: 2%;
+  background-color: transparent;
+}
+/* line 404, ../sass/mainStyle.scss */
+#team-section .wrapperT .cube:last-child > div:first-child {
+  width: 200px;
+  height: 200px;
+}
+/* line 408, ../sass/mainStyle.scss */
+#team-section .wrapperT .cube:last-child img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+/* line 415, ../sass/mainStyle.scss */
+#team-section .wrapperT .lines {
+  grid-column: 1 / 3;
+  align-self: center;
+  justify-self: center;
+}
+/* line 421, ../sass/mainStyle.scss */
+#team-section .textWrapper {
+  font-family: Raleway;
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 60px;
+}
+/* line 426, ../sass/mainStyle.scss */
+#team-section .textWrapper img {
+  height: 70px;
+  width: 80px;
+  cursor: pointer;
+}
+/* line 431, ../sass/mainStyle.scss */
+#team-section .textWrapper span {
+  font-weight: bold;
+}
+
+/* pricing calulator*/
+/* line 439, ../sass/mainStyle.scss */
+#pricing-section {
+  height: auto;
+  padding-bottom: 50px;
+}
+/* line 446, ../sass/mainStyle.scss */
+#pricing-section .wrapperT {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  grid-row-gap: 20px;
+}
+/* line 456, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:first-child,
+#pricing-section .wrapperT div:nth-child(4),
+#pricing-section .wrapperT div:nth-child(5),
+#pricing-section .wrapperT div:last-child {
+  grid-column: 1/4;
+}
+/* line 462, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:nth-child(2) {
+  grid-column: 1/4;
+}
+/* line 464, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:nth-child(2) input[type="text"] {
+  font-family: Roboto-Bold;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #222629;
+  padding-left: 10px;
+}
+/* line 473, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:nth-child(6) {
+  grid-column: 1/4;
+  justify-self: center;
+}
+/* line 476, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:nth-child(6) input[type="button"] {
+  background-color: #0AB984;
+  color: white;
+  font-family: Raleway;
+  font-size: 1.3em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* line 487, ../sass/mainStyle.scss */
+#pricing-section .wrapperT .txtWrapper {
+  grid-column: 1/4;
+  height: 10px;
+  width: 100%;
+  background-color: #5AB297;
+  position: relative;
+  margin-top: 20px;
+}
+/* line 494, ../sass/mainStyle.scss */
+#pricing-section .wrapperT .txtWrapper .inlineWrap {
+  position: absolute;
+  background-color: #222629;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 10px;
+}
+/* line 503, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:nth-child(8) {
+  grid-column: 1/4;
+  justify-self: center;
+  font-size: 1.4em;
+}
+/* line 507, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:nth-child(8) img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+/* line 513, ../sass/mainStyle.scss */
+#pricing-section .wrapperT div:nth-child(3) {
+  grid-column: 1/4;
+  justify-self: space-between;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+/* contact us */
+/* line 527, ../sass/mainStyle.scss */
+#contact-section {
+  padding-bottom: 10px;
+  height: auto;
+  background-color: #E7EBE7;
+}
+/* line 535, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  font-family: Raleway;
+  border-radius: 10px;
+  padding: 50px 0px;
+  position: relative;
+  transition: all 250ms;
+}
+/* line 547, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct #imgContact {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 552, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct #imgContact img {
+  width: 100px;
+  height: 100px;
+}
+/* line 557, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:first-child {
+  grid-column: 1 / 3;
+  justify-self: center;
+  font-size: 1.6em;
+  text-align: center;
+}
+/* line 562, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:first-child span {
+  font-weight: bold;
+}
+/* line 566, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:nth-child(2) {
+  grid-column: 1 / 3;
+  font-weight: bold;
+  justify-self: center;
+  font-size: 1.3em;
+}
+/* line 571, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:nth-child(2) input[type="text"] {
+  font-family: Roboto-Bold;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #222629;
+  padding-left: 10px;
+}
+/* line 580, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:nth-child(3) {
+  grid-column: 1 / 3;
+  font-weight: bold;
+  margin-top: -40px;
+  justify-self: center;
+  font-size: 1.3em;
+  text-align: center;
+}
+/* line 587, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:nth-child(3) textarea {
+  resize: none;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+/* line 593, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:nth-child(4) {
+  justify-self: center;
+  grid-column: 1 / 3;
+  margin-top: 20px;
+}
+/* line 597, ../sass/mainStyle.scss */
+#contact-section .wrapperCnct div:nth-child(4) input[type="button"] {
+  background-color: #0AB984;
+  color: white;
+  font-family: Raleway;
+  font-size: 1.3em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px white;
+  cursor: pointer;
+}
+
+/* footer section */
+/* line 614, ../sass/mainStyle.scss */
+#footer-section {
+  height: auto;
+  background-color: #222629;
+  padding-bottom: 50px;
+  color: white;
+  box-shadow: 1px 1px 1px black;
+}
+/* line 621, ../sass/mainStyle.scss */
+#footer-section .wrapperF {
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(300px, auto);
+}
+/* line 627, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:first-child {
+  margin-top: 80px;
+  border-right: 5px solid #95989A;
+  grid-column: 1 / 2;
+  font-family: Raleway;
+}
+/* line 633, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:first-child ul {
+  list-style: none;
+}
+/* line 635, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:first-child ul li {
+  margin-top: 20px;
+}
+/* line 638, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:first-child ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+/* line 646, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:first-child ul li a:hover {
+  transition: all 250ms;
+  color: #32C296;
+}
+/* line 654, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:nth-child(2) {
+  margin-top: 80px;
+  grid-column: 2 / 3;
+  border-right: 5px solid #95989A;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.3em;
+}
+/* line 661, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:nth-child(2) .imgContainer {
+  border-right: none;
+  text-align: center;
+}
+/* line 664, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:nth-child(2) .imgContainer img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+/* line 671, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:nth-child(2) #line {
+  background-color: #95989A;
+  height: 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 678, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:nth-child(3) {
+  margin-top: 80px;
+  grid-column: 3 / 4;
+  font-family: Raleway;
+  font-size: 1.5em;
+  text-align: center;
+  align-self: center;
+}
+/* line 685, ../sass/mainStyle.scss */
+#footer-section .wrapperF div:nth-child(3) img {
+  width: 200px;
+  height: 200px;
+}
+/* line 691, ../sass/mainStyle.scss */
+#footer-section #copyright {
+  margin-top: 60px;
+  font-size: 1.2em;
+  font-family: Roboto;
+  text-align: center;
+}
+
+/* line 699, ../sass/mainStyle.scss */
+.navBarOpen {
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+/* line 704, ../sass/mainStyle.scss */
+.navBarOpen1 {
+  transform: rotate(-45deg) translate(7px, -6px);
+  transition: 0.4s;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1200px) {
+  /* line 714, ../sass/mainStyle.scss */
+  #intro-section #section-a {
+    width: 100%;
+  }
+
+  /* line 718, ../sass/mainStyle.scss */
+  #intro-section-image {
+    height: 98%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 724, ../sass/mainStyle.scss */
+  #intro-section {
+    position: relative;
+  }
+  /* line 726, ../sass/mainStyle.scss */
+  #intro-section #sideScroll {
+    width: 60px;
+    height: 80px;
+    z-index: 500;
+    right: 2px;
+  }
+  /* line 732, ../sass/mainStyle.scss */
+  #intro-section #section-a {
+    width: 80%;
+  }
+  /* line 734, ../sass/mainStyle.scss */
+  #intro-section #section-a #menu {
+    display: none;
+    background: url("../img/triangles.jpg") no-repeat center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clear: both;
+    margin: 0px;
+    padding: 0;
+    line-height: 50px;
+    width: 100%;
+    z-index: 101;
+    height: 580px;
+  }
+  /* line 748, ../sass/mainStyle.scss */
+  #intro-section #section-a #menu li {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* line 752, ../sass/mainStyle.scss */
+  #intro-section #section-a #menu li a {
+    display: block;
+  }
+  /* line 755, ../sass/mainStyle.scss */
+  #intro-section #section-a #menu li:first-child {
+    margin-top: 160px;
+  }
+  /* line 761, ../sass/mainStyle.scss */
+  #intro-section #section-a .toggleNavBar {
+    margin-top: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 102;
+    right: 0;
+  }
+  /* line 768, ../sass/mainStyle.scss */
+  #intro-section #section-a .toggleNavBar > div {
+    background: black;
+    height: 6px;
+    width: 32px;
+    border-radius: 7px;
+    margin-top: 3px;
+    border-radius: 3px;
+  }
+
+  /* line 779, ../sass/mainStyle.scss */
+  #projects-section .wrapperP #projectList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* line 785, ../sass/mainStyle.scss */
+  #clients-section .wrapperC {
+    width: 55%;
+  }
+
+  /* line 790, ../sass/mainStyle.scss */
+  #pricing-section .wrapperT {
+    width: 80%;
+  }
+
+  /* line 795, ../sass/mainStyle.scss */
+  #contact-section .wrapperCnct {
+    width: 80%;
+  }
+
+  /* line 803, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:nth-child(2) .imgContainer img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 814, ../sass/mainStyle.scss */
+  body {
+    font-size: 13px;
+  }
+
+  /* line 818, ../sass/mainStyle.scss */
+  #skills-section #wrapper, #projects-section #wrapper, #clients-section #wrapper, #team-section #wrapper, #pricing-section #wrapper, #contact-section #wrapper, #footer-section #wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* line 827, ../sass/mainStyle.scss */
+  #projects-section .wrapperP {
+    width: 100%;
+  }
+  /* line 829, ../sass/mainStyle.scss */
+  #projects-section .wrapperP #projectList {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* line 835, ../sass/mainStyle.scss */
+  #clients-section .wrapperC {
+    width: 75%;
+  }
+
+  /* line 840, ../sass/mainStyle.scss */
+  #team-section .wrapperT {
+    width: 80%;
+  }
+
+  /* line 845, ../sass/mainStyle.scss */
+  #contact-section .wrapperCnct {
+    width: 80%;
+  }
+
+  /* line 850, ../sass/mainStyle.scss */
+  #footer-section .wrapperF {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* line 852, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:first-child {
+    grid-column: 1 / 2;
+  }
+  /* line 855, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:nth-child(2) {
+    grid-column: 2 / 3;
+  }
+  /* line 858, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:nth-child(2) .imgContainer img {
+    width: 30px;
+    height: 30px;
+  }
+  /* line 864, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:last-child {
+    grid-column: 1 / 3;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 874, ../sass/mainStyle.scss */
+  #skills-section #wrapper, #projects-section #wrapper, #clients-section #wrapper, #team-section #wrapper, #pricing-section #wrapper, #contact-section #wrapper, #footer-section #wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* line 883, ../sass/mainStyle.scss */
+  #projects-section .wrapperP #projectList {
+    grid-template-columns: 1fr;
+  }
+
+  /* line 889, ../sass/mainStyle.scss */
+  #clients-section .wrapperC {
+    width: 90%;
+  }
+  /* line 891, ../sass/mainStyle.scss */
+  #clients-section .wrapperC .arrow {
+    width: 30px;
+    height: 30px;
+  }
+  /* line 895, ../sass/mainStyle.scss */
+  #clients-section .wrapperC #left {
+    top: 45%;
+    left: -2%;
+  }
+  /* line 899, ../sass/mainStyle.scss */
+  #clients-section .wrapperC #right {
+    top: 45%;
+    right: -2%;
+  }
+
+  /* line 906, ../sass/mainStyle.scss */
+  #team-section .wrapperT {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+  /* line 909, ../sass/mainStyle.scss */
+  #team-section .wrapperT > div {
+    grid-column: 1 / 3;
+  }
+  /* line 912, ../sass/mainStyle.scss */
+  #team-section .wrapperT .lines {
+    grid-column: 1 / 3;
+  }
+
+  /* line 918, ../sass/mainStyle.scss */
+  #pricing-section .wrapperT {
+    grid-template-columns: 1fr;
+  }
+  /* line 920, ../sass/mainStyle.scss */
+  #pricing-section .wrapperT > div:nth-child(3) {
+    display: block;
+  }
+  /* line 922, ../sass/mainStyle.scss */
+  #pricing-section .wrapperT > div:nth-child(3) > div {
+    margin-top: 25px;
+  }
+
+  /* line 929, ../sass/mainStyle.scss */
+  #contact-section .wrapperCnct {
+    text-align: center;
+    width: 90%;
+  }
+  /* line 933, ../sass/mainStyle.scss */
+  #contact-section .wrapperCnct > div:nth-child(3) textarea {
+    width: 80%;
+  }
+  /* line 937, ../sass/mainStyle.scss */
+  #contact-section .wrapperCnct #imgContact {
+    top: -40px;
+  }
+  /* line 939, ../sass/mainStyle.scss */
+  #contact-section .wrapperCnct #imgContact img {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* line 947, ../sass/mainStyle.scss */
+  #footer-section .wrapperF {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0px;
+  }
+  /* line 950, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:first-child {
+    grid-column: 1 / 2;
+    border-right: none;
+    margin-top: 30px;
+  }
+  /* line 955, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:nth-child(2) {
+    grid-column: 1 / 2;
+    border-right: none;
+    height: 150px;
+  }
+  /* line 960, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:nth-child(2) .imgContainer img {
+    width: 30px;
+    height: 30px;
+  }
+  /* line 966, ../sass/mainStyle.scss */
+  #footer-section .wrapperF div:last-child {
+    margin-top: 0px;
+    grid-column: 1 / 2;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 976, ../sass/mainStyle.scss */
+  #intro-section #section-a {
+    width: 100%;
+  }
+
+  /* line 983, ../sass/mainStyle.scss */
+  #team-section .wrapperT .lines img {
+    width: 100%;
+  }
+}

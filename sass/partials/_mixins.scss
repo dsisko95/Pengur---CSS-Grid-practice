@@ -1,0 +1,11 @@
+@mixin hamburgerLine {
+    background: black;
+    height: 6px;
+    width: 32px;
+    border-radius: 7px;
+}
+@mixin circle($width){
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+}

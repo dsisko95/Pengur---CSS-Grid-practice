@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    pen-gur --don't have twitter :(# THANKS
+
+   Daniel Sisovic
+
+# TECHNOLOGY COLOPHON
+
+    CSS3 (SaaS), HTML5, CSS Grid
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
