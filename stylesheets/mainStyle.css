@@ -158,6 +158,8 @@
   height: 60px;
   width: 60px;
   cursor: pointer;
+  position: relative;
+  top: -20px;
 }
 /* line 158, ../sass/mainStyle.scss */
 #intro-section #sideScroll {
@@ -210,15 +212,17 @@
 }
 /* line 202, ../sass/mainStyle.scss */
 #skills-section #wrapper .cube, #projects-section #wrapper .cube, #clients-section #wrapper .cube, #team-section #wrapper .cube, #pricing-section #wrapper .cube, #contact-section #wrapper .cube, #footer-section #wrapper .cube {
-  border: 8px solid #222629;
+  background:#E0E0D1;
+  border:2px solid grey;
   font-family: Roboto-Bold;
   font-size: 1.6em;
-  background-color: #95989A;
   text-align: center;
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  padding-bottom: 20px;  
 }
+
 /* line 211, ../sass/mainStyle.scss */
 #skills-section #wrapper .cube:hover div:last-child, #projects-section #wrapper .cube:hover div:last-child, #clients-section #wrapper .cube:hover div:last-child, #team-section #wrapper .cube:hover div:last-child, #pricing-section #wrapper .cube:hover div:last-child, #contact-section #wrapper .cube:hover div:last-child, #footer-section #wrapper .cube:hover div:last-child {
   height: 100%;
@@ -311,8 +315,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 5px solid #222629;
-  background-color: #81E3C6;
+  border: 2px solid grey;
+  background-color: #E0E0D1;
 }
 /* line 305, ../sass/mainStyle.scss */
 #clients-section .wrapperC .arrow {
@@ -340,7 +344,7 @@
 /* line 324, ../sass/mainStyle.scss */
 #clients-section .wrapperC #headerSection {
   height: 220px;
-  border-bottom: 5px solid #222629;
+  border-bottom: 2px solid grey;
 }
 /* line 327, ../sass/mainStyle.scss */
 #clients-section .wrapperC #headerSection div {
@@ -404,11 +408,12 @@
 }
 /* line 383, ../sass/mainStyle.scss */
 #team-section .wrapperT .cube {
-  border: 8px solid #222629;
+  border: 2px solid grey;
   font-family: Roboto-Bold;
   font-size: 1.6em;
-  background-color: #95989A;
+  background-color: #E0E0D1;
   text-align: center;
+  padding-bottom: 20px;
 }
 /* line 389, ../sass/mainStyle.scss */
 #team-section .wrapperT .cube > div:first-child {
